@@ -1,0 +1,427 @@
+
+*{
+    margin: 0;/*saco el margin que viene por default en todos los elementos*/
+    padding: 0;/*saco el padding que viene por default en todos los elementos*/
+    box-sizing: border-box;/*modifica el box model*/
+    text-decoration: none; /*quita el subrayado, usado especialmente en los elementos a*/
+    list-style: none;/*quita la viñeta de las listas*/
+    line-height: 1.5;/*interlineado. para mejor legibilidad de los textos*/
+    color: black;
+  
+}
+
+img{
+ display: block;
+ max-width: 100%;
+ height: auto;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+}
+
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+}
+
+#logo{
+  font-family: "Oswald", sans-serif;
+  font-size:0.8em;
+  color: black;
+  text-decoration: none;
+  padding-left: 3.4em;
+}
+
+p{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+  line-height: 1.7;
+}
+
+#barra{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+padding-top: 3%;
+padding-right: 10%;
+  margin-right:10% ;
+}
+
+#nav1{
+  width: 70%;
+  display: flex;
+  gap: 27%;
+  margin-left: 80%;
+  
+}
+
+.subrayar{
+ text-decoration: underline;
+ text-underline-offset: 3px;
+}
+
+#slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#prev, #next{
+  position: absolute;
+  top: 50%;                     
+  z-index: 1000;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.8em 1.6em;
+  cursor: pointer;
+}
+
+#prev{
+  left: 3em;                
+}
+
+#next{
+  right: 3em;                
+  position: relative;
+    z-index: -1;
+    right: 4%;
+  width: 60%;
+  height: auto;
+  margin-top: 30px;
+  justify-content:flex-start;
+  padding-right: 20%;
+}
+
+.botonexplore{
+  position: relative;
+    z-index: 998;
+  background-color: #000;
+  color: #fff;
+  padding: 1.2em 3.5em;  
+  justify-content:flex-start;
+  
+ 
+}
+
+.fslider{
+  position: relative;
+    z-index: 999;
+  font-size: 5.3em;
+  justify-content: center;
+  line-height: 1;
+  padding-bottom: 0.5em;
+ width: min-content;
+  
+}
+
+.block{
+  display: block;
+  padding-left: 30%;
+  
+}
+
+.flex{
+  display: flex;
+}
+
+.f2{
+  font-size: 5.3em;
+  width: 45%;
+  line-height: 1;
+  padding-left:4% ;
+}
+
+.w85{
+  width: 85%;
+  justify-content: right;
+}
+
+.articulos{
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin-left:4%;
+  margin-top: 45px;
+  gap: 5%;
+}
+
+.ma20{
+  max-width: 28%;
+}
+.ma15{
+  max-width: 11.5%;
+}
+
+.p-art{
+  font-size: 0.8em;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+  line-height: 1.7;
+}
+
+.h6-art{
+  font-size: 1em;
+  padding-bottom: 0.7em;
+}
+
+#galeria1{
+  padding-top: 9em;
+  padding: 9em 4em;
+  padding-bottom: 9em;
+  
+}
+
+.gal1{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;        
+  margin: 0 auto;
+}
+.gal1 img {
+  width: 100%;
+  display: block;   
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.gal1 article{
+  width: 33.33%;
+  
+}
+
+.bordecirculo{
+  display: inline-table;
+  padding: 3em;
+  border:1px solid #000 ;
+ border-radius: 50%;
+}
+
+.bordecirculo2 {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.botonseemore{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  aspect-ratio: 1 / 1;
+  border: 1px solid #000;
+  border-radius: 50%;
+  text-align: left;
+  padding: 0 30%;
+  
+}
+
+.lista{
+   display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left:4em;
+  gap: 4%;
+  padding-bottom: 9em;
+}
+
+h5{
+  font-size: 5.2em;
+}
+
+h6{
+  font-size: 1.5em;
+}
+
+.f1{
+  font-size: 5.3em;
+  color: transparent;
+  -webkit-text-stroke: 0.8px;
+  -webkit-text-stroke-color:grey ;
+  padding: 25px;
+  
+}
+
+.menossize{
+ font-size: 0.9em;
+ margin-top:0.8em ;
+ margin-bottom: 2em;
+}
+
+.fvideo{
+background-image:url(/assets/imgs/video/captura-video.png);
+height: 75vh;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+
+  .f3{
+  font-size: 5.3em;
+  line-height: 1;
+  /*padding-left: 4%;*/
+  margin-left: 0;
+  padding-bottom: 0.4em;
+}
+
+
+
+#team{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 4em;        
+  padding-bottom: 9em;
+}
+#team .f-team{
+  display: flex;
+  flex-direction: column;
+  width: 66.66%;          
+  align-items: flex-start;
+  justify-content: center;
+  
+}
+
+#team article{
+  width: 33.33%;         
+}
+
+.f-team p{
+ /*padding-left: 4%;*/
+ max-width: 90%;
+ font-size: 0.9em;
+}
+
+.interlineado{
+   line-height: 1.1;
+}
+
+#premios{
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+padding-left:4em;
+padding-right: 4em;
+padding-bottom: 9em;
+  
+}
+
+
+
+.años{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+
+}
+
+.awardstitulo{
+  width: 50%;
+  justify-content: left;
+  align-items: flex-start;
+ 
+}
+
+.f4{
+ font-size: 5.3em;
+  line-height: 1;
+}
+
+.años article{
+width: 50%;
+}
+.años h6{
+  font-size: 1.2em;
+}
+
+.años p{
+  font-size: 0.9em;
+  margin-bottom: 3em;
+
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#nav2{
+  display: flex;
+  justify-content: space-between;
+  gap: 27%;
+  width: 30%;
+  
+  
+}
+
+.overlayconteiner{
+	position: relative;
+}
+
+
+.overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    transition: .8s ease;
+	opacity:0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.overlayconteiner:hover .overlay{
+	opacity:1;
+}
+
+.overlay a {
+  color:white;
+  font-size: 2em;
+}
+
+#galeria1 h6 {
+  color: white;
+  font-size: 0.6em;
+}
+
+#galeria1 p {
+  color: white;
+  font-size: 0.5em;
+}
+/*.textohover{
+  position: absolute;
+  z-index: 1000;
+  color: white;
+}*/
+footer p{
+  max-width: 52%;
+  
+}
