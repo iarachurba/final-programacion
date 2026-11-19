@@ -14,77 +14,88 @@
 </head>
 
 <body>
-    <header>
+     <header>
         <section id="barra">
             <div>
+                <h1>
                 <a id="logo" href="#">MANON</a>
+                </h1>
             </div>
-           <nav id="nav1"></nav>
-                    <li>
-                        <ul> <a href="/index.html">HOME</a> </ul>
-                        <ul> <a href="/gallery.html">GALLERY</a> </ul>
-                        <ul> <a href="/portfolio-single.html">PORTFOLIO SINGLE</a> </ul>
-                        <ul> <a href="/contact.html">CONTACT</a> </ul>
-                    </li>
+                <nav id="nav1">
+                    <ul>
+                        <li> <a href="/index.html">HOME</a> </ul>
+                        <li> <a class="subrayar" href="/gallery.html">GALLERY</a> </ul>
+                        <li> <a href="/contact.html">CONTACT</a> </ul>
+                    </ul>
                 </nav>
             </div>
         </section>
     </header>
-
     <main>
-        <h2>THINK POSITIVE</h2>
+        <h2 class="titulo-port">THINK POSITIVE</h2>
 
-        <section>
-            <article>
-                <img src="/assets/imgs/portfolio-ind/portfolio1.jpg" alt="">
-            </article>
-            <article>
-                <img src="/assets/imgs/portfolio-ind/porfolio2.jpg" alt="">
-            </article>
-            <article>
-                <img src="/assets/imgs/portfolio-ind/porfolio3.jpg" alt="">
-            </article>
-        </section>
+      <div id="contenido">
+        <section id="fotosPort">
+    <div >
+        <article>
+            <img class="fotosPort" src="" alt="">
+        </article>
+        <article>
+            <img class="fotosPort" src="" alt="">
+        </article>
+        <article>
+            <img class="fotosPort" src="" alt="">
+        </article>
+    </div>
+</section>
+       
 
-        <section>
-            <h4>NEW APPROACH</h4>
-            <p>Lorem ipsum dolors sit amet, cons ectetur adipisci elit, sed do eiusmod tempor inc ididunt ut labores et
-                dolore ercit ati on ull amco laboris nisi ut aliqui. Dui aute irur tu dolo end erit in volup tate velit
-                ese.</p>
+    <section id="textoPort">
+    <h4>NEW APPROACH</h4>
+    <p class="descripcion">Lorem ipsum dolors sit amet, cons ectetur adipisci elit, sed do eiusmod tempor inc ididunt ut labores et
+        dolore ercit ati on ull amco laboris nisi ut aliqui. Dui aute irur tu dolo end erit in volup tate velit
+        ese.</p>
 
-            <h6>CLIENT</h6>
-            <p>Qode Themes</p>
-            <h6>CLIENT</h6>
-            <p>Qode Themes</p>
-            <h6>CLIENT</h6>
-            <p>Qode Themes</p>
-            <h6>CLIENT</h6>
-            <p>Qode Themes</p>
-        </section>
+    <h6>CLIENT</h6>
+    <p class="mini">Qode Themes</p>
+    <h6>DESIGNERS</h6>
+    <p class="mini">Danielle Wood, Julia Murphy</p>
+    <h6>DATE</h6>
+    <p class="mini">December 26, 2018</p>
+    <h6>SHARE</h6>
+</section>
+</div>
 
-        <section>
-            <a href="#">NEXT PROJECT</a>
+        <section id="iconoGaleria">
+            <div id="iconoGal">
+                <a href="/gallery.html">
+  <img src="/assets/imgs/icono/menuicono.png" alt="icono">
+</a>
+            </div >
+            <div id="linkProyecto">   <a  class="subrayar" href="#">NEXT PROJECT</a></div>
+
+         
         </section>
     </main>
-    <footer>
-        <div>
+      <footer >
+        <div >
             <nav id="nav2">
-                <li>
-                     <ul> <a href="/index.html">HOME</a> </ul>
-                        <ul> <a href="/gallery.html">GALLERY</a> </ul>
-                        <ul> <a href="/portfolio-single.html">PORTFOLIO SINGLE</a> </ul>
-                        <ul> <a href="/contact.html">CONTACT</a> </ul>
-                </li>
+                <ul>
+                    <li> <a href="/index.html">HOME</a> </ul>
+                    <li> <a href="/gallery.html">GALLERY</a> </ul>
+                    <li> <a href="/contact.html">CONTACT</a> </ul>
+                </ul>
             </nav>
         </div>
-        <div>
-            <p class="osfont">feel free to contact us anytime, anywhere
+        <div id="linea"></div>
+        <div id="textoFooter">
+            <p>feel free to contact us anytime, anywhere
                 © 2019 Qode Interactive, All Rights Reserved
             </p>
         </div>
 
     </footer>
-
+<script src="assets/js/portfolio.js" ></script>
 </body>
 
 </html>

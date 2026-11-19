@@ -33,19 +33,22 @@
         </section>
     </header>
     <main>
-        <section id="slider" class="sliderImg">
-    <div id="contenedorSlider" class="block" >
-        <h2 class="fslider" id="slider-titulo"></h2>
-        <button class="botonexplore" href="#">EXPLORE</button>
-    
-     <button id="prev">PREV</button>
-    <img  id="slider-imagen" class="imagenslider"  src="" alt="slider1">
-    <button id="next">NEXT</button>
+        <section id="slider">
+    <button id="prev">PREV</button>
+
+    <div id="slider-centro">
+        <div id="contenedorSlider">
+            <h2 id="slider-titulo"></h2>
+            <button id="botonexplore" href="#">EXPLORE</button>
+        </div>
+        <img id="slider-imagen" src="" alt="slider1">
     </div>
+
+    <button id="next">NEXT</button>
 </section>
-            <H2 class="f1">TURNING AGENCY WORK INTO PURE ART</H2>
+            <h2 class="f1">TURNING AGENCY WORK INTO PURE ART</h2>
         <section>
-            <H2 class="f2">OVER 10 YEARS IN THE GAME</H2>
+            <h2 class="f2">OVER 10 YEARS IN THE GAME</h2>
 
             <div class="articulos">
                 <article class="ma20">
@@ -94,11 +97,11 @@
                   </div> 
             </article>
             <article>
-                <div class="overlayconteiner">
+                <div >
                <img class="imagengaleria" src="" alt="">
             
-               <div class="overlay">
-                    <a href="#" target="_blank"><h6 class="blanco">DIFERENT WAY</h6><p class="bla">/Marketing</p></a>
+               <div >
+                   
                </div>
                   </div> 
             </article>
@@ -139,17 +142,17 @@
                   </div> 
             </article>
             <article >
-                <div class="overlayconteiner">
+                <div >
                <img class="imagengaleria" src="" alt="">
             
-               <div class="overlay">
-                    <a href="#" target="_blank"><h6 class="blanco">DIFERENT WAY</h6><p class="bla">/Marketing</p></a>
+               <div >
+                   
                </div>
                   </div> 
             </article>
                 <article class="bordecirculo2">
                         <a class="botonseemore" href="#">SEE MORE</a>
-                <!-- PONER BORDE CIRCULO OCN CSS -->
+        
                 </article>
                 </div>
         </section>
@@ -193,18 +196,19 @@
             </article>
         </section>
         <section class="fvideo">
-            <!--FONDO FOTO DEL VIDEO CON CSS(?) y CIRCULO DEL BOTON-->
+           
             <a  class="bordecirculo" href="#">PLAY</a>
         </section>
 
         <section id="frase">
-            <div>
-                <p>ICONO</p>
+            <div id="icono-frase">
             </div>
-            <div>
+            <div id="sliderFrases">
+                <button id="prev2"> "<" </button>
                 <!--SLIDER DE FRASES-->
-                <h4>Lorem Ipsum proin gravida nibh velter auctors aenean velitsollicitudin dolo</h4>
-                <p>Louis Evans</p>
+                <h4 id="titulos">Lorem Ipsum proin gravida nibh velter auctors aenean velitsollicitudin dolo</h4>
+                <p class="autor">Louis Evans</p>
+                 <button id="next2"> ">" </button>
             </div>
         </section>
 
@@ -245,7 +249,7 @@
             </article>
              <article class="bordecirculo2">
                         <a class="botonseemore interlineado" href="#">SEE ALL</a>
-                <!-- PONER BORDE CIRCULO OCN CSS -->
+            
                 </article>
         </section>
 
@@ -291,90 +295,17 @@
                 </ul>
             </nav>
         </div>
-        <div>
+        <div id="linea"></div>
+        <div id="textoFooter">
             <p>feel free to contact us anytime, anywhere
                 © 2019 Qode Interactive, All Rights Reserved
             </p>
         </div>
 
     </footer>
+<script src="/assets/js/script.js"></script>
+
 </body>
 
-<script>
-  const contenidoSlider = [
-    { imagen: "/assets/imgs/slider1/slider1.jpg", texto: "CREATIVITY ABOVE ALL" },
-    { imagen: "/assets/imgs/slider1/slider2.jpg", texto: "ENVISION THE FUTURE" },
-    { imagen: "/assets/imgs/slider1/slider3.jpg", texto: "WE CREATE ARTWORK" }
-  ];
 
-  let currentIndex = 0;
-    let container=document.getElementById('contenedorSlider');
-    let fraseslider=document.getElementById("slider-titulo")
-    let imgslider=document.getElementById("slider-imagen")
-    
-
-    let btnPrev=document.getElementById('prev');
-    let btnNext=document.getElementById('next');
-
-    function showSlide(){
-        let item = contenidoSlider[currentIndex]; 
-    
-        imgslider.src=item.imagen;
-        fraseslider.innerText=item.texto;
-    }
-
-    function previous(){
-       currentIndex=(currentIndex - 1 + contenidoSlider.length)%contenidoSlider.length; 
-       showSlide(); 
-    }
-
-    function next(){
-        currentIndex=(currentIndex + 1)%contenidoSlider.length;
-        showSlide();
-    }
-
-    btnPrev.addEventListener('click',previous);
-    btnNext.addEventListener('click',next);
-    showSlide();
-
-
-
-
-
-  let arrayimgs=[
-    { imagen:"./assets/imgs/galeria1/galeria1.jpg"},
-    { imagen:"./assets/imgs/galeria1/galeria2.jpg"},
-    { imagen:"./assets/imgs/galeria1/gal7.jpg"},
-    { imagen:"./assets/imgs/galeria1/galeria3.png"},
-    { imagen:"./assets/imgs/galeria1/galeria4.jpg"},
-    { imagen:"./assets/imgs/galeria1/galeria5.jpg"},
-    { imagen:"./assets/imgs/galeria1/galeria6.jpg"},
-    { imagen:"./assets/imgs/galeria1/gal7.jpg"}
-  ]
-  
-  let galeria1=document.getElementsByClassName("imagengaleria")
-
-  for(let i=0;i<galeria1.length;i++){
-
-    let img=galeria1[i]
-    img.src=arrayimgs[i].imagen
-  }
-
-  let arrayimgs2=[
-    { imagen:"./assets/imgs/team/team1.jpg"},
-     { imagen:"./assets/imgs/team/team2.jpg"},
-      { imagen:"./assets/imgs/team/team3.jpg"},
-  ]
-  
-  let galeria2=document.getElementsByClassName("imagengaleria2")
-
-  for(let i=0;i<galeria1.length;i++){
-
-    let img2=galeria2[i]
-    img2.src=arrayimgs2[i].imagen
-  }
-  
-  
-
-</script>
 </html>
